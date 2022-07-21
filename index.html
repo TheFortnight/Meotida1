@@ -12,8 +12,11 @@
         </a>
       </div>
   
+      <button class="menu__button"><span class="menu__button-label">открыть меню</span></button>
+
+
       <nav class="header__menu">
-  
+
         <ul class="menu__list">
           <li class="menu__item"><a href="#" class="menu__link">главная</a>
           </li>
@@ -680,5 +683,36 @@
     <p class="copyright-text">Copyright <span class="copyright">2009-2019 City Blog LLC.</span></p>
   </footer>
 
+  <div class="popup">
+     <div class="popup__window">
+     </div> 
+  
+    <article class="popup__article">
+    
+            <h2 class="popup__title">ваш фидбек</h2>
+            <section class="popup__frequency">
+                <p>Как часто вы заходите на сайт?</p>
+                <select name="select" class="popup__select">
+                    <option value="almost every day">Почти каждый день</option>
+                    <option value="once in a few days">Раз в несколько дней</option>
+                    <option value="once in a few weeks">Раз в несколько недель</option>
+                    <option value="a few times per year">Несколько раз в год</option>
+                </select>
+            </section>
+            <section class="popup__subscription">
+                <p>Вы подписаны на e-mail рассылку?</p>
+                <label class="popup__radio">
+                <input class="radiobutton" type="radio" name="radio"><span class="radiotext">Да</span></label>
+                <label class="popup__radio">
+                <input class="radiobutton" type="radio" name="radio"><span class="radiotext">Нет</span></label>
+
+            </section>
+            <section class="popup__wishes">
+                <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+                <textarea type="text" class="popup__textarea" placeholder="Может, больше рецептов?"></textarea>
+                <button class="popup__submit" type="submit">отправить</button>
+            </section>
+    </article> 
+  </div>
 </body>
 </html>
