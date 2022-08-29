@@ -138,7 +138,7 @@ section {
   text-decoration: underline;
 }
 
-.titles .intrend_header {
+.titles, .intrend_header {
   text-align: center;
   padding: 60px 0 30px 0;
   text-transform: uppercase;
@@ -173,6 +173,7 @@ section {
 
 .trendbox {
   position: relative;
+  box-sizing: border-box;
 }
 
 
@@ -192,6 +193,7 @@ section {
 .trendtitle {
   box-sizing: border-box;
   height: auto;
+  max-height: 100%;
   border: solid 3px rgb(204, 153, 102, .4);
   position: absolute;
   z-index: 2;
@@ -203,15 +205,14 @@ section {
   right: 15px;
   padding: 25px 0 30px 35px;
   margin: auto, 20px, 15px;
-
-
   text-decoration: none;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
   line-height: 1.2;
-
+  overflow-y: scroll;
+  overflow-x: hidden;
 
 }
 
